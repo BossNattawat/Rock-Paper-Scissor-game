@@ -10,7 +10,7 @@ def main():
         
         while True:
             try:
-                user_input = input("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors\n\nAnswer : ")
+                user_input = input("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors\n\nAnswer : ").capitalize()
                 
                 if user_input not in choice:
                     print("The answer must be Rock, Paper, or Scissors.")
@@ -41,7 +41,7 @@ def main():
         
         print()
         
-        again = input("Want to play more? (y/n) : ")
+        again = input("Want to play more? (y/n) : ").lower()
         
         if again == "n":
             break
